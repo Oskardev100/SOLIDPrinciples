@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{251BB3BA-99C1-4DAE-989E-AEB127A957F7}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>DesignPatterns.Client</RootNamespace>
-    <AssemblyName>DesignPatterns.Client</AssemblyName>
+    <ProjectGuid>{B436F836-54E9-4F41-A766-0EFF761FC146}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DesignPatterns.Sample</RootNamespace>
+    <AssemblyName>DesignPatterns.Sample</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -42,21 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Creational.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\DesignPatterns.Sample\DesignPatterns.Sample.csproj">
-      <Project>{b436f836-54e9-4f41-a766-0eff761fc146}</Project>
-      <Name>DesignPatterns.Sample</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\DesignPatters.SOLID\DesignPatterns.SOLID.csproj">
-      <Project>{022c158c-6cc0-42b7-879b-af694850ebde}</Project>
-      <Name>DesignPatterns.SOLID</Name>
-    </ProjectReference>
+    <Compile Include="Structural.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

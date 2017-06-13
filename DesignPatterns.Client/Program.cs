@@ -24,11 +24,15 @@ namespace DesignPatterns.Client
 
             DesignPatterns.SOLID.DIP.Scenario3.Client DipClient3 = new SOLID.DIP.Scenario3.Client();
             DipClient3.RunProgram();
-            //Console.ReadLine();
 
 
 
             #region Design Patterns
+
+            //Factory
+
+            //Abstract Factory
+
             //Singleton
             DesignPatterns.Sample.Creational.Singleton.OOP.Client singletonClient = new Sample.Creational.Singleton.OOP.Client();
             singletonClient.RunSingleton();
@@ -40,8 +44,14 @@ namespace DesignPatterns.Client
             client1.DefaultMethod();
             client2.AdapterMethod();
 
+            //Chain Of Responsability
+            DesignPatterns.Sample.Behavioral.ChainOfResposibility.OOP.Client chain1 = new Sample.Behavioral.ChainOfResposibility.OOP.Client();
+            chain1.StartChainOfResp();
+            
+
             #endregion
 
-        }
+            Console.ReadLine();
+        }        
     }
 }
